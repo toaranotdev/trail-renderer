@@ -6,7 +6,7 @@ The main goal of this repository is to hopefully provide you with an idea on how
 ## The idea
 - **Generating the mesh**: the headGeometry define the shape of the head, in this case you probably want it to contain 2 points, we will then add the headGeometry to the trailsGeometry to form the quad needed based on some conditions like: the turn angle, the length of the quad, blablabla
   
-- **To calculate those two points mentioned**: you just need to keep track of the mouse positions to form a rough skeleton for the trail. Then we can calculate the unit vector from the previous mouse position to the current, that will be our unit vector, we can then invert the x and y to obtain the normal vector and use that to calculate the new 2 points
+- **To calculate those two points mentioned**: you just need to keep track of the mouse positions to form a rough skeleton for the trail. Then we can calculate the unit vector from the previous mouse position to the current, we can then invert the x and y to obtain the normal vector and use that to calculate the new 2 points
 
 - Feel free to create a new issue if you need help I guess
 
