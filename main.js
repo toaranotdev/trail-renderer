@@ -163,8 +163,8 @@ function updateMousePath() {
 
 function updateHead() {
     // Basically what we're doing is converting the unit vector (i.e: the two deltaX, deltaY values)
-    // to a normal vector, and I learned this in the 10th grade, you just swap the two X and Y and you got it.
-    // Also there are some translation involved
+    // to a normal vector, so u(x; y) -> n(-y; x), then we must translate the vector to where the tip of
+    // the skeleton is
     let deltaX = mousePosition.x - lastMousePosition.x;
     let deltaY = mousePosition.y - lastMousePosition.y;
 
@@ -174,10 +174,10 @@ function updateHead() {
     deltaY = (deltaY / length) * trailWidth;
 
     const x1 = deltaY + mousePosition.x;
-    const y1 = deltaX + mousePosition.y;
+    const y1 = -deltaX + mousePosition.y;
 
     const x2 = -deltaY + mousePosition.x;
-    const y2 = -deltaX + mousePosition.y;
+    const y2 = deltaX + mousePosition.y;
 
     headGeometry = [x1, y1, x2, y2];
 }
