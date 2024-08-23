@@ -21,6 +21,5 @@ Just set up a local web server and start moving with your mouse, the trail will 
 
 ## Credits
 - The head geometry and trail geometry idea is stolen from [this repo](https://github.com/mkkellogg/TrailRendererJS) lol
-- The texture is from [CC0 Textures](https://cc0-textures.com/)
 
 ### Thanks for dropping by! ♥
